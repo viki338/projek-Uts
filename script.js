@@ -9,6 +9,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         alert('Email tidak valid');
         event.preventDefault();
     }
+
     // Validasi format nomor HP
     var phonePattern = /^[0-9]{10,15}$/;
     if (!phonePattern.test(no_hp)) {
